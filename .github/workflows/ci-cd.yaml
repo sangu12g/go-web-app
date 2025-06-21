@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository:
+    - name: Checkout repository
       uses: actions/checkout@v4
     
     - name: set up GO 1.22
@@ -35,7 +35,7 @@ jobs:
 
     steps:
 
-    - name: Checkout repository:
+    - name: Checkout repository
       uses: actions/checkout@v4
     
     - name: Run golangci-lint
@@ -50,7 +50,7 @@ jobs:
 
     steps:
 
-    - name: Checkout repository:
+    - name: Checkout repository
       uses: actions/checkout@v4
 
     - name: Login to Docker
