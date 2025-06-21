@@ -1,8 +1,11 @@
 
-
-
-
+replicaCount: 1
 image:
-  repository: sangu12g/go-web-app
+  repository: "sangu12g/go-web-app"
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
   tag: "v1"
+
+
+
 appport: 8080

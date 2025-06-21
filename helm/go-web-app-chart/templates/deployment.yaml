@@ -1,10 +1,10 @@
 # this is dep[loyment manifest file for go application
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata: 
   name: go-web-app
   labels:
-    app: go-web-app'
+    app: go-web-app
 spec:
   replicas: 1
   selector:
@@ -17,6 +17,6 @@ spec:
   spec:
     containers:
     - name: go-web-app
-      image: {{ .values.image.repository }}: {{- .values.image.tag }}
+      image: {{ .Values.image.repository }}:{{- .Values.image.tag }}
       ports:
-      - containerPort: {{ .values.appport }}      
+      - containerPort: {{ .Values.appport }}      
