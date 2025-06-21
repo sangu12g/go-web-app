@@ -14,9 +14,9 @@ spec:
     metadata:
       labels:  
         app: go-web-app
-  spec:
-    containers:
-    - name: go-web-app
-      image: {{ .Values.image.repository }}:{{- .Values.image.tag }}
-      ports:
-      - containerPort: {{ .Values.appport }}      
+    spec:
+      containers:
+      - name: go-web-app
+        image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+        ports:
+        - containerPort: 8080     
