@@ -1,4 +1,4 @@
-# this is dep[loyment manifest file for go application
+# this is dep[loyment manifest file for go application   
 apiVersion: apps/v1
 kind: Deployment
 metadata: 
