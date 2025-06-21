@@ -1,0 +1,8 @@
+
+
+
+
+image:
+  repository: sangu12g/go-web-app
+  tag: "v1"
+appport: 8080
