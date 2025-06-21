@@ -1,4 +1,4 @@
-#using golang base image
+#using golang base image for build
 FROM golang:1.22.5 as base
 # setting the working directory to run the steps 
 WORKDIR /app
