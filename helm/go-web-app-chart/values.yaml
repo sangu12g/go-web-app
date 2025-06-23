@@ -4,7 +4,7 @@ image:
   repository: "sangu12g/go-web-app"
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "15817154987"
+  tag: "15817209657"
 
 
 
