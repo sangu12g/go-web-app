@@ -108,7 +108,7 @@ resource "aws_eks_node_group" "devopscluster" {
     min_size     = 1
   }
 
-  instance_types = ["t2.micro"]
+  instance_types = ["t2.medium"]
 
   remote_access {
     ec2_ssh_key = var.ssh_key_name
